@@ -228,6 +228,7 @@ class Pusher with _EventEmitter {
 
   /// Default constructor
   Pusher(String apiKey, PusherOptions options) {
+    print("wtdafadfsfafaasf $apiKey");
     _connection = Connection(apiKey, options);
   }
 
