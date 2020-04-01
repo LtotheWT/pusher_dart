@@ -119,7 +119,7 @@ class Connection with _EventEmitter {
     try {
       state = 'connecting';
       _broadcast('connecting');
-      webSocketChannel = IOWebSocketChannel.connect('https://192.168.0.36:6001');
+      webSocketChannel = IOWebSocketChannel.connect('wss://192.168.0.36:6001');
       // webSocketChannel = IOWebSocketChannel.connect(
       //     'wss://ws-${options.cluster}.pusher.com:443/app/$apiKey?protocol=5&client=dart-libPusher&version=0.1.0');
       webSocketChannel.stream.listen(_handleMessage);
