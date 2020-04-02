@@ -116,7 +116,7 @@ class Connection with _EventEmitter {
 
   _connect() {
     print("_connect");
-    String url = 'ws://192.168.1.39:6001';
+    String url = 'wss://192.168.1.150:6001/app/zg68mHxhWVkmHCGuSjPghurSz39hRQcw?protocol=7&client=js&version=4.3.1&flash=false';
     print(url);
     try {
       state = 'connecting';
